@@ -9,13 +9,13 @@ int main() {
     int nome;
 
     cout <<
-    "\n"
-    "__________.__              .___  .___      \n"
-    "\\______   \\  | _____     __| _/__| _/____  \n"
-    " |    |  _/  | \\__  \\   / __ |/ __ |/ __ \\ \n"
-    " |    |   \\  |__/ __ \\_/ /_/ / /_/ \\  ___/ \n"
-    " |______  /____(____  /\\____ \\____ |\\___  >\n"
-    "        \\/          \\/      \\/    \\/    \\/ \n";
+         "\n"
+         "__________.__              .___  .___      \n"
+         "\\______   \\  | _____     __| _/__| _/____  \n"
+         " |    |  _/  | \\__  \\   / __ |/ __ |/ __ \\ \n"
+         " |    |   \\  |__/ __ \\_/ /_/ / /_/ \\  ___/ \n"
+         " |______  /____(____  /\\____ \\____ |\\___  >\n"
+         "        \\/          \\/      \\/    \\/    \\/ \n";
 
     cout << "Digite enter para continuar..." << endl;
 
@@ -76,7 +76,14 @@ int main() {
     cout << "O homem diz:";
     cout << " - Meu nome é Jimmy, assim como os outros dessa região, moro por aqui mesmo." << endl;
     cout << "Ele estende a mão para te levantar, revelando que mais partes do seu corpo são feitos de metal." << endl;
-    cout << "\007" << "Você se levanta e sente o seu celular vibrando no bolso." << endl;
+
+    cin.get();
+
+    cout << "\007";
+
+    cin.get();
+
+    cout << "Você se levanta e sente o seu celular vibrando no bolso." << endl;
     cout << "Você pega o celular e vê que é uma mensagem de um número desconhecido. Que diz: " << endl;
 
     cin.get();
@@ -89,7 +96,7 @@ int main() {
 
     cin.get();
 
-    cout << " - Não adianta procurar por mim, você nunca vai me encontrar ";
+    cout << "\007" << " - Não adianta procurar por mim, você nunca vai me encontrar ";
 
     if (nome == 1) {
         cout << "Robert.";
@@ -103,8 +110,8 @@ int main() {
 
     cin.get();
 
-    cout << " - Eu só quero o que é meu, e você sabe muito bem o que é." << endl;
-    cout << " - Mas para refrescar sua memória, 11.102.050." << endl;
+    cout << "\007" << " - Eu só quero o que é meu, e você sabe muito bem o que é." << endl;
+    cout << "\007" << " - Mas para refrescar sua memória, 11.102.050." << endl;
 
     return 0;
 }
