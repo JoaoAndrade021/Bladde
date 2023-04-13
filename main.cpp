@@ -166,8 +166,8 @@ int main() {
 
     cout << endl;
 
+    cout << "Você decide que é melhor sair do beco que está." << endl;
     cin.get();
-    cout << "Apenas decide que é melhor sair do beco que está." << endl;
     cout << "A cidade é putrida, o cheiro de fumaça misturado com óleo e metal toma conta de você." << endl;
     cout << "Por trás da cortina de gás preto dos carros que flutuam, relusindo, é possivel enchergar" << endl;
     cout << "Pessoas com membros ciberneticos, pernas, braços, olhos, tudo que é possivel imaginar." << endl;
@@ -245,6 +245,9 @@ int main() {
         cout << "Você decide que vale a pena tomar um banho. A moça te leva até o cubículo que ela mora, e é dificil não notar o quão pequeno é." << endl;
         cout << "chega estanhamente a lembrar um cativeiro, apenas com uma cama, um oculos de realidade aumentada," << endl;
         cout << "e umas 5 garrafas de algo que se assemelha a vodka espalhadas pelos cantos." << endl << endl;
+
+        cin.get();
+
         cout << "Ela te mostra a direção do chuveiro, e você toma um banho que tanto precisava." << endl;
         cout << "Isso definitivamente vai te ajudar." << endl << endl;
         cout << "Vocês se despedem, e ela te dá o número dela, te desejando boa sorte no bar." << endl;
@@ -283,10 +286,16 @@ int main() {
             cout << "Você encontra um vendedor de implantes na esquina, é tão comum quanto parece." <<  endl;
             cout << "Perto de você, um cara grita, com cordas vocais melhoradas mecanicamente:" << endl;
             cout << "- Três por 10.000! Três por 10.000!" << endl;
+
+            cin.get();
+
             cout << "Você se aproxima, e o homem esguio com o que parece ser uma caixa de som no lugar do pescoço diz: " << endl;
             cout << "- HA HA AH - quase te ensurdecendo no processo -. O QUE TEMOS AQUI??" << endl;
             cout << "- MEU MANO JIMMY JÁ PERDEU O QUE EU VENDI PRA ELE?? TADINHO!!! MAS ASSIM É A VIDA NA LIBERDADE!!!" << endl;
             cout << "- AFIM DE FAZER UMA TROQUINHA?? HA HA AH." << endl;
+
+            cin.get();
+
             cout << "- TE DOU 4.000.000 NESSA BELEZINHA!!! EU NÃO PASSO A PERNA EM CLIENTE!!! HA HA AH" << endl << endl;
             cout << "Relutantemente, você entrega o braço para o homem, que te dá o dinheiro, sorrindo. logo aumenta sua caixa de som e grita:" << endl;
             cout << "- MODELO 2049 X-FORCE DOUBLE, O BRAÇO MAIS AVANÇADO, ULTIMA GERAÇÃO, APENAS 10.000.000! HA HA AH!!!" << endl;
@@ -338,8 +347,8 @@ int main() {
         cout << "- " << endl;
         cin >> resultado;
         if(resultado == 2) {
-            dinheiro = dinheiro + 8000000;
-            cout << "O cliente te olha com orgulho, era extamente isso, ele aparentemente é algum magnata, e te dá 8.000.000 de gorgeta." << endl;
+            dinheiro = dinheiro + 3000000;
+            cout << "O cliente te olha com orgulho, era extamente isso, ele aparentemente é algum magnata, e te dá 3.000.000 de gorgeta." << endl;
         }
         else {
             dinheiro = dinheiro + 1000000;
@@ -363,11 +372,11 @@ int main() {
         cout << "Deve ser fácil você pensa, agora você tem o seu braço mecânico, você se sente invencível." << endl;
         cout << "Sem exitação, você vai pra cima dele." << endl;
         if(trabalhouComJhonny) {
-            dinheiro = 10000000;
+            dinheiro = 11000000;
             cin.get();
             cout << "O Jhonny nota o que está acontecendo, e pula pra cima do cara junto. Juntos, vocês debulham ele." << endl;
             cout << "Ele tinha uma grana, que é muito bem vinda, o Jhonny faz vista grossa, e deixa você pegar." << endl;
-            cout << "E não é pouco dinheiro. R$11.000.000." << endl;
+            cout << "E não é pouco dinheiro. R$9.000.000, que somado com o sálario fechava em 1.200.000" << endl;
         }
         else {
             dinheiro = 10000000;
@@ -380,77 +389,150 @@ int main() {
         }
     }
 
-    // TODO: FAZER DIFERENTES FINAIS BASEADO NA QUANTIDADE DE DINHEIRO, TALVEZ UNS 2 OU 3
-    // ALUCINAÇÃO APARECE E CONFRONTA ELE
-    // ELE NOTA QUE O DINHEIRO NA VERDADE É UMA DATA
-
     cout << "------------------ Dia 11/11/2050 23:00 ------------------" << endl;
     cout << "Carteira: R$" << dinheiro << endl;
     cout << "----------------------------------------------------" << endl;
 
     cin.get();
 
-    cout << "Quando da 23 horas em ponto, você percebe que está acabado, pois não conseguiu nada de dinheiro durante o dia." << endl;
-    cout << "Completamente desolado, você observa melhor o valor que você deve e percebe que se parece com uma data, mais especificamente o dia de ontem." << endl;
-    cout << "Quando se dá conta disso, suas memórias começam do dia anterior começam a voltar." << endl;
-    cout << "Uma briga de bar, uma aposta, uma pessoa a qual você deve. Tudo isso começa a pipocar na sua cabeça." << endl;
-    cout << " - Ah ";
+    if (dinheiro < 10102050) {
+        cout
+                << "Quando da 23 horas em ponto, você percebe que está acabado, pois não conseguiu todo o dinheiro durante o dia."
+                << endl;
+        cout
+                << "Completamente desolado, você observa melhor o valor que você deve e percebe que se parece com uma data, mais especificamente o dia de ontem."
+                << endl;
+        cout << "Quando se dá conta disso, suas memórias começam do dia anterior começam a voltar." << endl;
+        cout << "Uma briga de bar, uma aposta, uma pessoa a qual você deve. Tudo isso começa a pipocar na sua cabeça."
+             << endl;
+        cout << " - Ah ";
 
-    if (nome == 1) {
-        cout << "Robert." << endl;
-    } else if (nome == 2) {
-        cout << "Dom." << endl;
-    } else if (nome < 1 || nome > 2) {
-        cout << "Deckard." << endl;
+        if (nome == 1) {
+            cout << "Robert." << endl;
+        } else if (nome == 2) {
+            cout << "Dom." << endl;
+        } else if (nome < 1 || nome > 2) {
+            cout << "Deckard." << endl;
+        }
+
+        cout << " - Finalmente você se lembrou do que aconteceu ontem a noite?" << endl;
+        cout << "Olhando para trás assustado, uma figura alta com um sobretudo preto e um chapéu se projeta." << endl;
+        cout << "E ele continua falando." << endl;
+
+        cin.get();
+
+        cout << "- Lembrou da briga com o seu chefe? de vir beber nesse bar? " << endl;
+        cout
+                << "de apostar tudo o que tinha e o que não tinha? De apanhar em um beco escuro onde ninguém poderia te ajudar?"
+                << endl;
+
+        if (nome == 1) {
+            cout << "Robert." << endl;
+        } else if (nome == 2) {
+            cout << "Dom." << endl;
+        } else if (nome < 1 || nome > 2) {
+            cout << "Deckard." << endl;
+        }
+
+        cout << " - Você é tão tolo que não se deu conta do que eu realmente vim buscar." << endl;
+
+        cout << " - Quem caralhos é você? ." << endl;
+
+        cout << " - Eu tenho muitos nomes. Mas de onde eu venho, costumam me chamar de" << endl;
+        cout << " - Morte..." << endl;
+
+        cin.get();
+
+
+        cout << " - Essa data, é a data em que você morreu." << endl;
+        cout << " - Sem ajuda, sozinho, assim como foi na sua vida inteira, alguém que sempre desprezou os outros."
+             << endl;
+        cout << " - Não merecia um final melhor." << endl;
+
+        cin.get();
+
+        cout << " - Mas fique tranquilo ";
+
+        if (nome == 1) {
+            cout << "Robert. Você vai sofrer muito mais no lugar que eu vou te levar." << endl;
+        } else if (nome == 2) {
+            cout << "Dom. Você vai sofrer muito mais no lugar que eu vou te levar." << endl;
+        } else if (nome < 1 || nome > 2) {
+            cout << "Deckard. Você vai sofrer muito mais no lugar que eu vou te levar." << endl;
+        }
+
+        cout << " - E não se preocupe, você vai sofrer sozinho, assim como é do seu agrado HAHAHAHAHA." << endl;
     }
 
-    cout << " - Finalmente você se lembrou do que aconteceu ontem a noite?" << endl;
-    cout << "Olhando para trás assustado, uma figura alta com um sobretudo preto e um chapéu se projeta." << endl;
-    cout << "E ele continua falando." << endl;
+    if (dinheiro >= 10102050) {
+        cout << "Depois do seu expediente acabar, você sai todo feliz, por que conseguiu todo dinheiro." << endl;
+        cout << "Olha o seu celular e vê se não deixou nenhuma mensagem passar." << endl;
+        cout << "Quando você percebe, você ouve uma voz atrás de você." << endl;
 
-    cin.get();
+        if (nome == 1) {
+            cout << "- Olha só Robert, não é que você conseguiu?" << endl;
+        } else if (nome == 2) {
+            cout << "- Olha só Dom, não é que você conseguiu?" << endl;
+        } else if (nome < 1 || nome > 2) {
+            cout << "- Olha só Deckard, não é que você conseguiu?" << endl;
+        }
 
-    cout << "- Lembrou da briga com o seu chefe? de vir beber nesse bar? " << endl;
-    cout << "de apostar tudo o que tinha e o que não tinha? De apanhar em um beco escuro onde ninguém poderia te ajudar?" << endl;
+        cout << "Você se vira e da de cara com uma figura alta com um sobretudo preto e um chapéu." << endl;
+        cout << "Você nem pensa duas vezes e se prepara para atacar, mas é inútil já que simplesmente atravessa o sujeito." << endl;
 
-    if (nome == 1) {
-        cout << "Robert." << endl;
-    } else if (nome == 2) {
-        cout << "Dom." << endl;
-    } else if (nome < 1 || nome > 2) {
-        cout << "Deckard." << endl;
+        if (nome == 1) {
+            cout << "- HAHAHAHA, ah Robert, não teste minha paciência, por mim você nem teria essa chance." << endl;
+        } else if (nome == 2) {
+            cout << "- HAHAHAHA, ah Dom, não teste minha paciência, por mim você nem teria essa chance." << endl;
+        } else if (nome < 1 || nome > 2) {
+            cout << "- HAHAHAHA, ah Deckard, não teste minha paciência, por mim você nem teria essa chance." << endl;
+        }
+
+        cin.get();
+
+        cout << "- Infelizmente ou felizmente, você provou pelo menos um pouco que mudou a sua forma de pensar." << endl;
+        cout << "- Já que você viveu toda a sua vida de forma egoista e sem sequer, pensar em ajudar ou receber ajuda dos outros." << endl;
+
+        cin.get();
+
+        cout << "- Isso não passava de um teste para saber se você realmente merecia estar vivo, e você me mostrou que sim." << endl;
+        cout << "- Mas você não precisa de mais explicações, quando você acordar vai voltar a viver normalmente." << endl;
+
+        cin.get();
+
+        if (nome == 1) {
+            cout << "- Até o nosso próximo encontro Robert, e não se esqueça que eu estou sempre te observando." << endl;
+        } else if (nome == 2) {
+            cout << "- Até o nosso próximo encontro Dom, e não se esqueça que eu estou sempre te observando." << endl;
+        } else if (nome < 1 || nome > 2) {
+            cout << "- Até o nosso próximo encontro Deckard, e não se esqueça que eu estou sempre te observando." << endl;
+        }
+
+        cout << "E a figura misteriosa simplesmente desaparece." << endl;
+        cout << "Você fica ali parado, sem saber o que fazer, tentando compreender o que aconteceu." << endl;
+
+        cin.get();
+
+        cout << "No dia seguinte quando acorda, você se depara com um mundo diferente do seu." << endl;
+        cout << "Você checa o calendário e descobre que na real, está no dia 13/04/2023, e você está atrasado para o trabalho." << endl;
+        cout << "Você se deita novamente incrédulo com o que acabou de acontecer, pensando se de alguma forma isso foi real." << endl;
+        cout << "Você vê que recebeu uma mensagem no seu celular." << endl;
+
+        cin.get();
+
+        if (nome == 1) {
+            cout << "- Cuide bem dessa sua nova chance Robert HAHAHAHAHA." << endl;
+        } else if (nome == 2) {
+            cout << "- Cuide bem dessa sua nova chance Dom HAHAHAHAHA." << endl;
+        } else if (nome < 1 || nome > 2) {
+            cout << "- Cuide bem dessa sua nova chance Deckard HAHAHAHAHA." << endl;
+        }
+
+        cout << "Um pouco assustado mas mais aliviado, você tenta ser mais amigável ao longo de sua vida." << endl;
     }
-
-    cout << " - Você é tão tolo que não se deu conta do que eu realmente vim buscar." << endl;
-
-    cout << " - Quem caralhos é você? ." << endl;
-
-    cout << " - Eu tenho muitos nomes. Mas de onde eu venho, costumam me chamar de" << endl;
-    cout << " - Morte..." << endl;
-
-    cin.get();
-
-
-    cout << " - Essa data, é a data em que você morreu." << endl;
-    cout << " - Sem ajuda, sozinho, assim como foi na sua vida inteira, alguém que sempre desprezou os outros." << endl;
-    cout << " - Não merecia um final melhor." << endl;
-
-    cin.get();
-
-    cout << " - Mas fique tranquilo ";
-
-    if (nome == 1) {
-        cout << "Robert. Você vai sofrer muito mais no lugar que eu vou te levar." << endl;
-    } else if (nome == 2) {
-        cout << "Dom. Você vai sofrer muito mais no lugar que eu vou te levar." << endl;
-    } else if (nome < 1 || nome > 2) {
-        cout << "Deckard. Você vai sofrer muito mais no lugar que eu vou te levar." << endl;
-    }
-
-    cout << " - E não se preocupe, você não vai sofrer sozinho, assim como é do seu agrado. HAHAHAHAHA" << endl;
 
     cout << "Dessa forma acaba sua experiência nesse mundo, lembrando que você sempre pode jogar de novo e tentar fazer novas esolhas." << endl;
-    cout << "Vai que isso muda o final?" << endl << endl;
+    cout << "Talvez você tenha um final diferente." << endl << endl;
     cout << "Obrigado por jogar!" << endl;
 
     return 0;
