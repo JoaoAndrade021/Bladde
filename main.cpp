@@ -43,7 +43,7 @@ int main() {
     cin.get();
 
     cout << "Ele se levanta e se aproxima de você, e diz: " << endl;
-    cout << " - Qual seu nome amigo?" << endl;
+    cout << "- Qual seu nome amigo?" << endl;
     cout << "Você se questiona fortemente, pois não lembra nem como foi parar ali ou o que estava fazendo na noite anterior." << endl << endl;
 
     cout << "(Escolha um nome)" << endl;
@@ -69,7 +69,7 @@ int main() {
 
     cout << "." << endl;
 
-    cout << " - Entendi. Aqui é extremamente perigoso, e você parece ter apanhado bastante. Tem para onde ir?" << endl << endl;
+    cout << "- Entendi. Aqui é extremamente perigoso, e você parece ter apanhado bastante. Tem para onde ir?" << endl << endl;
 
     cin.get();
 
@@ -80,7 +80,7 @@ int main() {
     cin.get();
 
     cout << "O homem diz:";
-    cout << " - Meu nome é Jimmy, assim como os outros dessa região, moro por aqui mesmo." << endl;
+    cout << "- Meu nome é Jimmy, assim como os outros dessa região, moro por aqui mesmo." << endl;
     cout << "Ele estende a mão para te levantar, revelando que mais partes do seu corpo são feitos de metal." << endl;
 
     cin.get();
@@ -94,7 +94,7 @@ int main() {
 
     cin.get();
 
-    cout << " - Ah então você finalmente acordou?" << endl;
+    cout << "- Ah então você finalmente acordou?" << endl;
 
     cin.get();
 
@@ -104,7 +104,7 @@ int main() {
 
     cout << "\007";
 
-    cout << " - Não adianta procurar por mim, você nunca vai me encontrar ";
+    cout << "- Não adianta procurar por mim, você nunca vai me encontrar ";
 
     if (nome == 1) {
         cout << "Robert." << endl;
@@ -116,26 +116,26 @@ int main() {
 
     cin.get();
 
-    cout << "\007" << " - Eu só quero o que é meu, e você sabe muito bem o que é." << endl;
-    cout << "\007" << " - Mas para refrescar sua memória, 10.102.050." << endl;
+    cout << "\007" << "- Eu só quero o que é meu, e você sabe muito bem o que é." << endl;
+    cout << "\007" << "- Mas para refrescar sua memória, 10.102.050." << endl;
 
     cout << endl;
 
     cout << "Você se questiona o que isso significa. O que é 10.102.050? Você deve todo esse dinheiro?" << endl;
-    cout << "\007" << " - Então, vai me dar o que eu quero?" << endl;
+    cout << "\007" << "- Então, vai me dar o que eu quero?" << endl;
     cout << "Parece que ele quer uma resposta." << endl;
     cout << "(0 = não, 1 = sim)" << endl;
     cout << "- ";
     cin >> resultado;
 
     if (resultado == 1) {
-        cout << "\007" << " - Fingindo saber o que está acontecendo não é? Você realmente é simples de entender." << endl;
+        cout << "\007" << "- Fingindo saber o que está acontecendo não é? Você realmente é simples de entender." << endl;
     }
 
     if (resultado != 1) {
-        cout << "\007" << " - HAHAHAHAHAHAHAHAHHAH" << endl;
+        cout << "\007" << "- HAHAHAHAHAHAHAHAHHAH" << endl;
         cin.get();
-        cout << "\007" << " - Você acha que tem escolha?" << endl;
+        cout << "\007" << "- Você acha que tem escolha?" << endl;
     }
 
     cin.get();
@@ -170,7 +170,7 @@ int main() {
     cin.get();
     cout << "A cidade é putrida, o cheiro de fumaça misturado com óleo e metal toma conta de você." << endl;
     cout << "Por trás da cortina de gás preto dos carros que flutuam, relusindo, é possivel enchergar" << endl;
-    cout << "Pessoas com membros ciberneticos, pernas, braços, olhos, tudo que é possivel imaginar." << endl;
+    cout << "pessoas com membros ciberneticos, pernas, braços, olhos, tudo que é possivel imaginar." << endl;
     cout << "São Paulo. A maior megalópole do mundo. Aqui é onde o mundo acaba, e todas as histórias começam." << endl;
 
     cin.get();
@@ -240,7 +240,7 @@ int main() {
     cout << "(0 = não, 1 = sim)" << endl;
     cout << "- ";
     cin >> resultado;
-    if(resultado != 0) {
+    if(resultado == 1) {
         foiComSarah = 1;
         cout << "Você decide que vale a pena tomar um banho. A moça te leva até o cubículo que ela mora, e é dificil não notar o quão pequeno é." << endl;
         cout << "chega estanhamente a lembrar um cativeiro, apenas com uma cama, um oculos de realidade aumentada," << endl;
@@ -253,6 +253,7 @@ int main() {
         cout << "Vocês se despedem, e ela te dá o número dela, te desejando boa sorte no bar." << endl;
     }
     else {
+        foiComSarah = 0;
         cout << "Você sente que não seria uma boa ideia ir na casa de alguém que mal lembra de ter visto uma vez." << endl;
         cout << "Você recusa fazendo um gesto com a mão." << endl;
         cout << "Ela meio decepcionada, se despede de você, e te deseja boa sorte no bar." << endl << endl;
@@ -269,39 +270,39 @@ int main() {
         cout << "- ";
         cin >> escolhaBraco;
         cout << endl;
-        if(escolhaBraco != 0) {
-            escolhaBraco = 1;
-            cout << "Não é muito difícil achar um bio-mecânico. O processo é simples, e rápido, porém na hora de pagar..." << endl;
-            cout << "O bio-mecânico pergunta: - Eaê, como vai ser?" << endl;
-            cout << "Ele te olha com cara de quem sabe o que está acontecendo." << endl << endl;
-            cout << "- Cê deu sorte que hoje eu tô de bom humor. Então cê me deve um favor." << endl;
-            cout << "- Dá umas porrada nesse maluco pra mim -ele te entrega uma foto-. Ele me deve uma grana. E toma isso como um aviso também." << endl;
-            cout << "- Você é o proximo caso não fizer o que eu digo. Bota esse braço pra bom uso." << endl << endl;
-            cout << "O braço se adapta a você rapidamente, você não sente falta do de carne e osso. Você é mais forte agora." << endl;
-            cout << "Com um embrulho no estomago de ter duas dividas pra pagar." << endl;
-        }
-        else {
-            dinheiro = 4000000;
-            escolhaBraco = 0;
-            cout << "Você encontra um vendedor de implantes na esquina, é tão comum quanto parece." <<  endl;
-            cout << "Perto de você, um cara grita, com cordas vocais melhoradas mecanicamente:" << endl;
-            cout << "- Três por 10.000! Três por 10.000!" << endl;
+    }
 
-            cin.get();
+    if(escolhaBraco == 1) 
+    {
+        cout << "Não é muito difícil achar um bio-mecânico. O processo é simples, e rápido, porém na hora de pagar..." << endl;
+        cout << "O bio-mecânico pergunta: - Eaê, como vai ser?" << endl;
+        cout << "Ele te olha com cara de quem sabe o que está acontecendo." << endl << endl;
+        cout << "- Cê deu sorte que hoje eu tô de bom humor. Então cê me deve um favor." << endl;
+        cout << "- Dá umas porrada nesse maluco pra mim -ele te entrega uma foto-. Ele me deve uma grana. E toma isso como um aviso também." << endl;
+        cout << "- Você é o proximo caso não fizer o que eu digo. Bota esse braço pra bom uso." << endl << endl;
+        cout << "O braço se adapta a você rapidamente, você não sente falta do de carne e osso. Você é mais forte agora." << endl;
+        cout << "Com um embrulho no estomago de ter duas dividas pra pagar." << endl;
+    }
 
-            cout << "Você se aproxima, e o homem esguio com o que parece ser uma caixa de som no lugar do pescoço diz: " << endl;
-            cout << "- HA HA AH - quase te ensurdecendo no processo -. O QUE TEMOS AQUI??" << endl;
-            cout << "- MEU MANO JIMMY JÁ PERDEU O QUE EU VENDI PRA ELE?? TADINHO!!! MAS ASSIM É A VIDA NA LIBERDADE!!!" << endl;
-            cout << "- AFIM DE FAZER UMA TROQUINHA?? HA HA AH." << endl;
+    if (escolhaBraco == 0)
+    {
+        dinheiro = 4000000;
+        cout << "Você encontra um vendedor de implantes na esquina, é tão comum quanto parece." <<  endl;
+        cout << "Perto de você, um cara grita, com cordas vocais melhoradas mecanicamente:" << endl;
+        cout << "- Três por 10.000! Três por 10.000!" << endl;
 
-            cin.get();
+        cin.get();
+        cout << "Você se aproxima, e o homem esguio com o que parece ser uma caixa de som no lugar do pescoço diz: " << endl;
+        cout << "- HA HA AH - quase te ensurdecendo no processo -. O QUE TEMOS AQUI??" << endl;
+        cout << "- MEU MANO JIMMY JÁ PERDEU O QUE EU VENDI PRA ELE?? TADINHO!!! MAS ASSIM É A VIDA NA LIBERDADE!!!" << endl;
+        cout << "- AFIM DE FAZER UMA TROQUINHA?? HA HA AH." << endl;
+        cout << "- TE DOU 4.000.000 NESSA BELEZINHA!!! EU NÃO PASSO A PERNA EM CLIENTE!!! HA HA AH" << endl << endl;
 
-            cout << "- TE DOU 4.000.000 NESSA BELEZINHA!!! EU NÃO PASSO A PERNA EM CLIENTE!!! HA HA AH" << endl << endl;
-            cout << "Relutantemente, você entrega o braço para o homem, que te dá o dinheiro, sorrindo. logo aumenta sua caixa de som e grita:" << endl;
-            cout << "- MODELO 2049 X-FORCE DOUBLE, O BRAÇO MAIS AVANÇADO, ULTIMA GERAÇÃO, APENAS 10.000.000! HA HA AH!!!" << endl;
-            cout << "Como um morador de rua tinha esse braço? E 10.000.000? Como assim? Isso é quase tudo que você precisava." << endl;
-            cout << "Agora com dinheiro em mãos, mas com a vergonha de ter sido ludibriado." << endl << endl;
-        }
+        cin.get();
+        cout << "Relutantemente, você entrega o braço para o homem, que te dá o dinheiro, sorrindo. logo aumenta sua caixa de som e grita:" << endl;
+        cout << "- MODELO 2049 X-FORCE DOUBLE, O BRAÇO MAIS AVANÇADO, ULTIMA GERAÇÃO, APENAS 10.000.000! HA HA AH!!!" << endl;
+        cout << "Como um morador de rua tinha esse braço? E 10.000.000? Como assim? Isso é quase tudo que você precisava." << endl;
+        cout << "Agora com dinheiro em mãos, mas com a vergonha de ter sido ludibriado." << endl << endl;
     }
 
     cin.get();
@@ -331,11 +332,11 @@ int main() {
     else {
         cout << "- Tá procurando emprego? Só entra por recomendação amigão. E depois de ontem, você vai precisar de uma das boas." << endl;
         cout << "Você decide ligar pra Sarah. Ela entende a situação, e pede pra você passar o telefone para o guarda." << endl;
-        cout << "- Tudo certo patrão. Agora vamo vê o que você consegue fazer. Ele diz, te devolvendo o celular." << endl << endl;
+        cout << "- Tudo certo patrão. Agora vamo vê o que você consegue fazer. Ele diz, te devolvendo o celular.";
     }
 
     cin.get();
-    if(foiComSarah == 1 && escolhaBraco == 0) {
+    if(foiComSarah == 1 && escolhaBraco != 1) {
         cout << "- Claramente cê não consegue lutar pra me ajudar aqui na frente. Que pena, vai ter que trabalhar de barista mesmo." << endl;
         cout << "- Dá uma grana, mas não é tão gratificante. É sempre bom dar porrada em vagabundo. Segue lá pra cozinha patrão." << endl << endl;
         cout << "O dono do bar, que já está preparando a cozinha usando seus 4 braços mecanicos, te ensina a fazer alguns drinks." << endl;
@@ -363,7 +364,7 @@ int main() {
         cout << "- Braço absurdo esse teu aí ein? Fica comigo aqui na portaria. Me ajuda a bater nos malandro que tentar entrar sem pagar, sempre tem." << endl;
         cout << "Você fica até o final da noite ajudando o Guarda, você descobre que o nome dele é Jhonny, e vocês viram amigos rápido." << endl;
         cout << "Pouco antes da meia noite, você já recebe o seu salário: Apenas R$102.050. Não é nem troco de bala." << endl;
-        cout << "Porém, o Jhonny vai te ajudar em qualquer coisa que ele puder." << endl << endl;
+        cout << "Porém, o Jhonny vai te ajudar em qualquer coisa que ele puder." << endl;
     }
 
     if(pegouBraco == 1) {
@@ -376,7 +377,7 @@ int main() {
             cin.get();
             cout << "O Jhonny nota o que está acontecendo, e pula pra cima do cara junto. Juntos, vocês debulham ele." << endl;
             cout << "Ele tinha uma grana, que é muito bem vinda, o Jhonny faz vista grossa, e deixa você pegar." << endl;
-            cout << "E não é pouco dinheiro. R$9.000.000, que somado com o sálario fechava em 1.200.000" << endl;
+            cout << "E não é pouco dinheiro. R$9.000.000, que somado com o sálario fechava em 1.200.000" << endl << endl;
         }
         else {
             dinheiro = 10000000;
